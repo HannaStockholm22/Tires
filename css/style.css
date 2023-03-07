@@ -1,0 +1,917 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+
+    /*background-color: rgb(158, 175, 170);*/
+}
+
+
+/* HEADER-TOP START */
+.header__top {
+    background-color: rgb(39, 30, 30);
+}
+
+.row__list {
+    display: flex;
+    justify-content: end;
+}
+
+.row__list-item {
+    display: inline-block;
+    /*border: 1px solid red; */
+    align-items: center;
+}
+
+.row__list-item+.row__list-item {
+    border-left: 1px solid #fff;
+    padding-left: 20px;
+}
+
+.row__list-link {
+    display: flex;
+}
+
+.row__list-p {
+    color: aliceblue;
+}
+
+.header__top {
+    background-color: rgb(40, 39, 46);
+}
+
+.row__list {
+    display: flex;
+    justify-content: end;
+}
+
+.row__list-item {
+    display: inline-block;
+    /* border: 1px solid red; */
+    align-items: center;
+    cursor: pointer;
+}
+
+.row__list-item+.row__list-item {
+    border-left: 1px solid #fff;
+    padding-left: 20px;
+}
+
+.row__list-link {
+    display: flex;
+}
+
+.row__list-p {
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.row__list-sp {
+    color: rgb(227, 136, 24);
+}
+
+/* HEADER-TOP END */
+
+/* HEADER NAVBAR START */
+.menu__content {
+    justify-content: end;
+}
+
+.menu__list {
+    margin-right: 15px;
+}
+
+.nav-item {
+    margin-right: 7px;
+}
+
+.nav-link {
+    color: rgb(39, 30, 30);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: rgb(227, 136, 24);
+}
+
+.menu__link-btn {
+    color: #fff;
+    background-color: rgb(227, 136, 24);
+    border: 1px solid rgb(227, 136, 24);
+    border-radius: 50%;
+}
+
+.menu__link-btn:hover {
+    background-color: #ee7171;
+    border: 1px solid #ee7171;
+}
+
+.menu__btn-span {
+    color: #fff;
+}
+
+/* HEADER NAVBAR END */
+
+/* HEM SLIDER START */
+.hem {
+    position: relative;
+    height: 60vh;
+}
+
+.carousel-indicators button {
+    display: none;
+}
+
+/*.carousel-inner {
+    position: absolute;
+    top: 16px;
+}*/
+
+.caro1{
+    position: absolute;
+    top:16px;
+}
+
+.carousel-item img {
+    height: 60vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    color: #000;
+    text-align: left;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
+}
+
+.carousel-caption {
+    left: 0;
+    top: 30%;
+}
+
+.hem__text {
+    font-family: "Poppins", sans-serif;
+}
+
+.hem__text-top {
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.hem__text-important {
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.hem__text-bottom {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.adress {
+    background-color: rgb(227, 136, 24);
+    border: 1px solid rgb(227, 136, 24);
+}
+
+.adress__h {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+/* HEM SLIDER +adr  END */
+
+
+/* WHEN  START */
+.when {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.when__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.when__left {
+    width: 50%;
+}
+
+.when__left-title {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.when__left-title::before {
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    bottom: -10px;
+    border: 2px solid rgb(227, 136, 24);
+    border-radius: 50%;
+}
+
+.when__left-title::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 50px;
+    bottom: -6px;
+    left: 15px;
+    background: rgb(227, 136, 24);
+}
+
+.when__item {
+    padding-bottom: 35px;
+}
+
+.when__item-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #222;
+}
+
+.when__item-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #667;
+}
+
+.when__right {
+    width: 50%;
+}
+
+.when__right-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, 250px);
+
+}
+
+.when__right-item {
+    border: 1px solid rgb(229, 229, 231);
+    margin-left: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.when__right-img {
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.when__right-title {
+    padding: 5px;
+}
+
+
+
+/* WHEN  END */
+
+.new {
+    height: 200px;
+    color: red;
+    background-color: #FFF;
+    border: 1px solid blue;
+}
+
+/* BUY START */
+.buy {
+    background-color: rgb(40, 39, 46);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+.buy__title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    padding: 80px 0;
+    margin: 0;
+}
+
+/* BUY  END */
+
+/* CONTACT START */
+.contact {
+    background-image: url("https://www.dackspecialisten.nu/images/background/kontakt.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.contact__info {
+    display: flex;
+    justify-content: start;
+    color: #666;
+    font-size: 14px;
+    line-height: 25px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.contact__info-first,
+.contact__info-second {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.867);
+    margin: 80px 0;
+    margin-right: 25px;
+    padding: 30px;
+}
+
+.contact__info-second {
+    padding-top: 120px;
+}
+
+.contact__name {
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    color: #000;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.contact__name::before {
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    bottom: -10px;
+    border: 2px solid rgb(227, 136, 24);
+    border-radius: 50%;
+}
+
+.contact__name::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 50px;
+    bottom: -6px;
+    left: 15px;
+    background: rgb(227, 136, 24);
+}
+
+.contact__info-head {
+    font-size: 16px;
+    color: #222;
+    padding-bottom: 10px;
+}
+
+.contact__info-p {
+    padding-bottom: 10px;
+}
+
+/* CONTACT END */
+
+/* KARTA START */
+.karta__ifr {
+    height: 76vh;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* KARTA END  */
+
+
+/* FOOTER START */
+.footer__top {
+    background-color: rgb(227, 136, 24);
+    height: 26vh;
+    text-align: center;
+
+}
+
+.footer__center {
+    background-color: rgb(40, 39, 46);
+    height: 45vh;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.footer__center-adr {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+    padding-top: 15px;
+
+}
+
+.footer__bottom {
+    border-top: 1px solid rgb(95, 91, 91);
+    height: 15vh;
+    color: #fff;
+    background-color: rgb(40, 39, 46);
+}
+
+.footer__bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+
+}
+
+.footer__bottom-leftcolor {
+    color: rgb(227, 136, 24);
+}
+
+/* FOOTER END  */
+
+/* PAGE 2 (TJANSTER) START  */
+.tjanster__top {
+    height: 45vh;
+    background-image: url(https://www.dackspecialisten.nu/images/tyres1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    z-index: -1;
+}
+
+.tjanster__top::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .6;
+    z-index: 0;
+}
+
+.tjanster__top-name {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    padding-top: 160px;
+    color: #fff;
+    z-index: 1;
+}
+
+.tjanster__second {
+    background-color: rgb(231, 233, 233);
+    font-family: "Poppins", sans-serif;
+}
+
+.tjanster__second-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tjanster__second-text {
+    color: #000;
+    font-weight: 400;
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+.tjanster__second-btn {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: rgb(227, 136, 24);
+    border: 1px solid rgb(227, 136, 24);
+    border-radius: 50%;
+}
+
+.tjanster__second-btn:hover {
+    background-color: #ee7171;
+    border: 1px solid #ee7171;
+}
+
+.nar {
+    background-color: #fff;
+    padding: 100px 0;
+    cursor: auto;
+}
+
+.nar__title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    padding-bottom: 50px;
+    color: #222;
+    text-align: start;
+}
+
+.nar__content {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-rows: repeat(2, minmax(250px, 370px));
+    gap: 30px;
+}
+
+.nar__item {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid rgb(229, 229, 231);
+}
+
+.nar__item-top {
+    position: relative;
+}
+
+.nar__item-top::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(167, 167, 171, 0.3);
+    transition: all .6s;
+    opacity: 0;
+}
+
+.nar__item-top:hover::before {
+    opacity: 1;
+}
+
+.nar__item-bottom {
+    padding-top: 20px;
+}
+
+.nar__item-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 15px;
+    color: #222;
+}
+
+.nar__item-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #667;
+}
+
+
+.vision {
+    background-color: #000;
+    height: 550px;
+    padding: 60px;
+}
+
+.vision__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vision__left {
+    text-align: start;
+}
+
+.vision__left-text {
+    color: #667;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+.vision__left-title {
+    color: #fff;
+    max-width: 300px;
+    font-size: 64px;
+    line-height: 66px;
+    font-weight: 500;
+}
+
+
+/* PAGE 2 (TJANSTER) END  */
+
+/* PAGE 3 (OSS) START  */
+
+
+
+.about__name{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 40px;   
+}
+
+.about__info-text{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #667;
+    margin-bottom: 25px;
+    max-width: 600px;
+   
+}
+
+
+.liteslider {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.liteslider__inner {
+    display: flex;
+    justify-content: start;
+}
+
+.liteslider__left {
+    background-image: url(https://www.dackspecialisten.nu/images/tyre57.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 37%;
+}
+
+.liteslider__content {
+    height: 180px;
+    width: 60%;
+    margin-top: 160px;
+    margin-bottom: 160px;
+    box-shadow: 0 0 30px 1px rgba(0, 0, 0, .1);
+}
+
+.liteslider-pad {
+    padding: 53px;
+
+}
+
+.liteslider__text-top {
+    font-weight: 400;
+    color: #667;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 15px;
+}
+
+.liteslider__text-bottom {
+    color: #222;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* PAGE 3 (OSS) END  */
+
+/* PAGE 4 (KONTAKT) START  */
+
+.kontakt4 {
+    background-color: #fff;
+}
+
+.kontakt4__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 0;
+}
+
+.kontakt4__name {
+    font-size: 24px;
+    text-align: start;
+    color: #000;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+
+.kontakt4__info {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    color: #666;
+    font-size: 14px;
+    line-height: 25px;
+    font-family: "Open Sans", sans-serif;
+    /*border: 1px solid blue;*/
+}
+
+.kontakt4__info-item {
+    display: flex;
+    justify-content: start;
+    /*border:1px solid green;*/
+    margin-bottom: 50px;
+}
+
+.kontakt4__info-icon {
+    height: 70px;
+    width: 70px;
+    padding: 15px 15px;
+}
+
+.kontakt4__info-head {
+    font-size: 16px;
+    color: #222;
+    padding-bottom: 10px;
+}
+
+.kontakt4__info-p {
+    padding-bottom: 10px;
+}
+
+.kontakt4__right-img {
+    width: 350px;
+
+}
+
+/* PAGE 4 (KONTAKT) END  */
+
+
+
+
+/* MEDIA  START */
+
+@media (max-width: 1200px) {
+    .when__inner {
+        flex-direction: column;
+    }
+
+    .when__left {
+        width: 100%;
+    }
+
+    .when__right {
+        width: 100%;
+    }
+
+    .when__right-content {
+        column-gap: 30px;
+    }
+
+    .when__right-item {
+        margin-left: 0;
+    }
+
+    .buy__title {
+        max-width: 800px;
+
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .tjanster__second-row {
+        flex-direction: column;
+        align-self: center;
+        padding: 10px;
+    }
+
+    .tjanster__second-text {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .tjanster__second-link {
+        text-align: center;
+    }
+
+    .vision__inner {
+      
+        flex-direction: column;
+    }
+
+    .kontakt4__inner {
+        flex-direction: column;
+    }
+
+    .liteslider__content {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .when__right-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (4, 250px);
+    }
+
+    .contact__info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contact__info-first,
+    .contact__info-second {
+        margin:  60px 0; 
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+
+
+    .kontakt4__info {
+        flex-direction: column;
+        margin: 15px;
+    }
+
+    .kontakt4__right-img {
+        width: 100%;
+    }
+
+    .liteslider__inner {
+        flex-direction: column;
+    }
+
+    .liteslider__left {
+        width: 98%;
+        height: 520px;
+    }
+
+    .liteslider__content {
+        height: 180px;
+        width: 98%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    }
+
+    .buy__title {
+        font-size: 26px;
+
+    }
+
+
+}
+@media (max-width: 576px) {
+
+    .row__list-sp {
+        font-size: 14px;
+    }
+
+    .hem__text-important {
+        font-weight: 500;
+        font-size: 42px;
+    }
+    .nar__content {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 300px); 
+          
+    }
+
+    .vision__left-title {
+        font-size: 44px;
+        
+    }
+    .vision__right-img{
+        width: 95%;
+    }
+    
+}
+
+/* MEDIA END  */
